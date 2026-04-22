@@ -1,0 +1,73 @@
+ENTORNO DE TRABAJO 
+    Editor: VScode
+    Terminal: integrada de VSCode + Warp
+
+Usuario A
+    PASO 1 
+        CREAR index.html
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Modulo 1</title>
+        </head>
+        <body>
+            
+        </body>
+        </html>
+    
+    PASO 2
+        INICIAR REPOSITORIO GIT Y COMMIT INICIAL 
+
+            git init  
+            git add . 
+            git comimt -m "initial commit"
+
+    PASO 3
+        CREAR REPOSITORIO EN GITHUB
+        
+
+    PASO 4 
+        CONECTAR AL REPO Y PUSH PRINCIPAL
+            git remote add origin
+           git push --set-upstream origin main
+
+
+Usuario B 
+    PASO 1
+        FORK DEL REPO
+    PASO 2 
+        CLONAR EL REPO 
+            gitl clone https://github.com/reguer0/DeustoFormacion.git
+    PASO 3 
+        CREAR RAMA DE CAMBIOS
+            git checkout -b feature/cambios
+    PASO 4
+        CAMBIOS EN EL HTML
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Modulo 1</title>
+            </head>
+            <body>
+                <H1>cambios realizados por el ususario B </H1>
+            </body>
+            </html>
+    PASO 5 
+        SUBIR LOS CAMBIOS
+            git add .
+            git commit -m "nueva estiqueta anadida"
+           git push --set-upstream origin feature/cambios
+
+    PASO 6 
+        CREAR PR   
+
+
+
+Usuario A 
+
+    REVISAR PR
